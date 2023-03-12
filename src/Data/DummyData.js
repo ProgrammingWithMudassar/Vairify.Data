@@ -2,6 +2,18 @@ import Section4 from '../Assets/png/Section4.png'
 import Section21 from '../Assets/png/Section21.png'
 import Section22 from '../Assets/png/Section22.png'
 import Section23 from '../Assets/png/Section23.png'
+import Section3chat from '../Assets/png/Section3chat.png'
+import Section3VirtulMarket from '../Assets/png/Section3VirtualMarket.png'
+import Section3Geolocation from '../Assets/png/Section3Geolocation.png'
+import Section3CorporateStructure from '../Assets/png/Section3CorporateStructure.png'
+import Section3IntegratedCalender from '../Assets/png/Section3IntegratedCalender.png'
+import Section3reviewprotection from '../Assets/png/Section3reviewprotection.png'
+import Section3PersonalSecurity from '../Assets/png/Section3PersonalSecurity.png'
+import Section3revenueSharing from '../Assets/png/Section3revenueSharing.png'
+import Section3FoundingMembers from '../Assets/png/Section3FoundingMembers.png'
+import Section3p2pwallet from '../Assets/png/Section3p2pwallet.png'
+import about from '../Assets/png/about.png'
+
 
 
 
@@ -11,7 +23,7 @@ export const HomeData = {
 }
 
 export const aboutData = {
-    img:Section4,
+    img: about,
     desc: 'Welcome to VAIRIFY.DATE, the future of the dating industry. Our patent-pending app features cutting-edge technology, including anonymous identification, A.I., KYC verification, end-to-end encrypted chat and voice, personal security assistance, and an exclusive P2P wallet. Our app revolutionizes the dating industry by providing all the necessary tools to navigate it safely and conveniently while saving you money. Watch our video to see our app in action and take a tour of all the features that bring the industry beyond the present and into the future. Sign up today for free and enjoy the perks and unparalleled opportunity to make a substantial passive income as a founding member of the community. Join VAIRIFY.DATE and secure your place in the fastest growing worldwide community'
 }
 
@@ -21,24 +33,24 @@ export const benifitData = {
 
 export const benifitCardData = [
     {
-        x:-100,
-        width:"12rem",
+        x: -100,
+        width: "12rem",
         mt: "0px",
         img: Section21,
         title: 'Client',
         desc: 'lorem asdmas das dvas dvasnpafg asifd asdfasgfr m,a sdkva aofv asdv as va dvas dvasnpafg asifd asdfasgfr m,a sdkva aofv asdv as va dvas dvasnpafg asifd asdfasgfr m,a sdkva aofv asdv as va'
     },
     {
-        x:100,
-        width:"12rem",
+        x: 100,
+        width: "12rem",
         mt: "100px",
         img: Section22,
         title: 'Provider',
         desc: 'lorem asdmas das dvas dvasnpafg asifd asdfasgfr m,a sdkva aofv asdv as va dvas dvasnpafg asifd asdfasgfr m,a sdkva aofv asdv as va dvas dvasnpafg asifd asdfasgfr m,a sdkva aofv asdv as va'
     },
     {
-        x:-100,
-        width:"14rem",
+        x: -100,
+        width: "14rem",
         mt: "0px",
         img: Section23,
         title: 'Business',
@@ -63,13 +75,13 @@ export const FeatureData = [
         titlecolor: "#FFD355",
         subTitleColor: "#B6B6B6",
         number: "02",
-        title: "Data Driven",
+        title: "creative automation",
         subTitle: "Data Driven",
         desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio quam commodi repudiandae suscipit! Doloremque quam illo quia illum, perferendis vero ex totam, culpa neque velit quae magni quas exercitationem in."
     },
     {
         id: 3,
-        img: Section4,
+        img: Section3chat,
         titlecolor: "#FF5555",
         subTitleColor: "#B6B6B6",
         number: "03",
@@ -79,9 +91,9 @@ export const FeatureData = [
     },
     {
         id: 4,
-        img: Section4,
-        titlecolor: "#95FF55",
-        subTitleColor: "#B6B6B6",
+        img: Section3chat,
+        titlecolor: "#6F6EB2",
+        subTitleColor: "#6F6EB2",
         number: "04",
         title: "Encrypted Chat and voice",
         subTitle: "Data Driven",
@@ -89,7 +101,7 @@ export const FeatureData = [
     },
     {
         id: 5,
-        img: Section4,
+        img: Section3p2pwallet,
         titlecolor: "#55C6FF",
         subTitleColor: "#B6B6B6",
         number: "05",
@@ -99,7 +111,7 @@ export const FeatureData = [
     },
     {
         id: 6,
-        img: Section4,
+        img: Section3PersonalSecurity,
         titlecolor: "#C455FF",
         subTitleColor: "#B6B6B6",
         number: "06",
@@ -109,7 +121,7 @@ export const FeatureData = [
     },
     {
         id: 7,
-        img: Section4,
+        img: Section3VirtulMarket,
         titlecolor: "#C455FF",
         subTitleColor: "#B6B6B6",
         number: "07",
@@ -119,7 +131,7 @@ export const FeatureData = [
     },
     {
         id: 8,
-        img: Section4,
+        img: Section3reviewprotection,
         titlecolor: "#C455FF",
         subTitleColor: "#B6B6B6",
         number: "08",
@@ -129,7 +141,7 @@ export const FeatureData = [
     },
     {
         id: 9,
-        img: Section4,
+        img: Section3IntegratedCalender,
         titlecolor: "#C455FF",
         subTitleColor: "#B6B6B6",
         number: "09",
@@ -139,7 +151,7 @@ export const FeatureData = [
     },
     {
         id: 10,
-        img: Section4,
+        img: Section3Geolocation,
         titlecolor: "#C455FF",
         subTitleColor: "#B6B6B6",
         number: "10",
@@ -149,7 +161,7 @@ export const FeatureData = [
     },
     {
         id: 11,
-        img: Section4,
+        img: Section3CorporateStructure,
         titlecolor: "#C455FF",
         subTitleColor: "#B6B6B6",
         number: "11",
@@ -159,12 +171,22 @@ export const FeatureData = [
     },
     {
         id: 12,
-        img: Section4,
+        img: Section3FoundingMembers,
         titlecolor: "#C455FF",
         subTitleColor: "#B6B6B6",
         number: "12",
-        title: "Sign up now",
+        title: "Founding members perks",
         subTitle: "Data Driven",
         desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio quam commodi repudiandae suscipit! Doloremque quam illo quia illum, perferendis vero ex totam, culpa neque velit quae magni quas exercitationem in."
     },
+    {
+        id: 13,
+        img: Section3revenueSharing,
+        titlecolor: "#C455FF",
+        subTitleColor: "#B6B6B6",
+        number: "13",
+        title: "Revenue sharing",
+        subTitle: "Data Driven",
+        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio quam commodi repudiandae suscipit! Doloremque quam illo quia illum, perferendis vero ex totam, culpa neque velit quae magni quas exercitationem in."
+    }
 ]
