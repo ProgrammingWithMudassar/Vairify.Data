@@ -11,6 +11,7 @@ import Section3reviewprotection from '../Assets/png/Section3reviewprotection.png
 import Section3PersonalSecurity from '../Assets/png/Section3PersonalSecurity.png'
 import Section3revenueSharing from '../Assets/png/Section3revenueSharing.png'
 import Section3FoundingMembers from '../Assets/png/Section3FoundingMembers.png'
+import VAI from '../Assets/png/VAI.png'
 import Section3p2pwallet from '../Assets/png/Section3p2pwallet.png'
 import about from '../Assets/png/about.png'
 
@@ -81,7 +82,7 @@ export const FeatureData = [
     },
     {
         id: 3,
-        img: Section3chat,
+        img: VAI,
         titlecolor: "#FF5555",
         subTitleColor: "#B6B6B6",
         number: "03",
