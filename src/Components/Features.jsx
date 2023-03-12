@@ -1,0 +1,84 @@
+import { Box, Container, Typography, Grid, Stack, Button } from '@mui/material'
+import React, { useState } from 'react'
+import './Styles.css'
+import { FeatureData } from "../Data/DummyData"
+import ReactPlayer from 'react-player';
+
+
+const Features = () => {
+    const [showVideo, setShowVideo] = useState(false);
+
+    const handleShowVideo = () => {
+        setShowVideo(true);
+    };
+
+    const closeVideo = () => {
+        setShowVideo(false);
+    }
+
+
+    return (
+        <Box sx={{ mt: { xs: 8, md: 4 } }}>
+            <Container>
+                <Box className="sectionTitle">
+                    <Typography variant="h4" fontWeight={600} className='name' >Features</Typography>
+                </Box>
+                <Box sx={{ mt: { xs: 8, md: 8 } }}>
+                    {
+                        FeatureData.map((data, key) => {
+                            return key % 2 === 0 ?
+                                <Grid container spacing={4} mt={8}>
+                                    <Grid item xs={12} md={6}  >
+                                        <Stack direction='column'>
+                                            <Box display='flex' alignItems='center'>
+                                                <Typography variant="body1" color="#ffffff" className='number' sx={{ fontSize: '16px', background: `${data.titlecolor}` }}>{data.number}</Typography>
+                                                <Box ml={4}>
+                                                    <Typography variant="body1" sx={{ fontSize: '20px', fontWeight: 600, color: `${data.titlecolor}` }}>{data.title}</Typography>
+                                                    <Typography variant="body2" sx={{ color: `${data.subTitleColor}` }}>{data.subTitle}</Typography>
+                                                </Box>
+                                            </Box>
+                                            <Typography variant="body1" color="initial" mt={4} sx={{ textIndent: '30px' }}>{data.desc}</Typography>
+                                            <Button sx={{ color: "#ffffff", width: "250px", mt: 4, borderRadius: "30px", background: `${data.titlecolor}`, "&:hover": { backgroundColor: `${data.titlecolor}` } }} onClick={handleShowVideo}> View V.A.I</Button>
+                                            <div className={`video-popup ${showVideo ? 'show' : ''}`} style={{ display: 'flex', flexDirection: 'column' }}>
+                                                <Button sx={{ my: '20px', color: '#ffffff', px: 4 }} onClick={closeVideo}> close </Button>
+                                                <ReactPlayer
+                                                    url="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                                                    controls={true}
+                                                    width="800px"
+                                                    height="450px"
+                                                />
+                                            </div>
+                                        </Stack>
+                                    </Grid>
+                                    <Grid item xs={12} md={6} display="flex" alignItems='center' justifyContent='center'>
+                                        <img src={data.img} alt="" width={300} />
+                                    </Grid>
+                                </Grid>
+                                :
+                                <Grid container spacing={4} mt={8} sx={{ flexDirection: { xs: 'column-reverse', md: 'row' } }}>
+                                    <Grid item xs={12} md={6} display="flex" alignItems='center' justifyContent='center'>
+                                        <img src={data.img} alt="" width={300} />
+                                    </Grid>
+                                    <Grid item xs={12} md={6}  >
+                                        <Stack direction='column'>
+                                            <Box display='flex' alignItems='center'>
+                                                <Typography variant="body1" color="#ffffff" className='number' sx={{ fontSize: '16px', background: `${data.titlecolor}` }}>{data.number}</Typography>
+                                                <Box ml={4}>
+                                                    <Typography variant="body1" sx={{ fontSize: '20px', fontWeight: 600, color: `${data.titlecolor}` }}>{data.title}</Typography>
+                                                    <Typography variant="body2" sx={{ color: `${data.subTitleColor}` }}>{data.subTitle}</Typography>
+                                                </Box>
+                                            </Box>
+                                            <Typography variant="body1" color="initial" mt={4} sx={{ textIndent: '30px' }}>{data.desc}</Typography>
+                                            <Button sx={{ color: "#ffffff", width: "250px", mt: 4, borderRadius: "30px", background: `${data.titlecolor}`, "&:hover": { backgroundColor: `${data.titlecolor}` } }}> View V.A.I</Button>
+                                        </Stack>
+                                    </Grid>
+                                </Grid>
+                        })}
+                </Box>
+            </Container>
+        </Box>
+
+    )
+}
+
+export default Features
