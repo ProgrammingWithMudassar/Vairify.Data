@@ -17,6 +17,14 @@ const theme = createTheme({
   },
   typography: {
     fontFamily: font,
+    h6: {
+      '@media (min-width:600px)': {
+        fontSize: '1.1rem', // Change the font size for md screens
+      },
+      '@media (max-width:599.95px)': {
+        fontSize: '1rem', // Change the font size for xs screens
+      },
+    },
     button: {
       background: 'linear-gradient(360deg, #4D4B95 30%, #7C72C5 90%)',
       border: 0,

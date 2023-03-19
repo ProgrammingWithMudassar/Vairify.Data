@@ -109,6 +109,7 @@ const Features = () => {
                                                     </Box>
                                                 </Box>
                                                 <Typography variant="h6" color="initial" mt={4} sx={{ textIndent: '30px' }}>{data.desc}</Typography>
+                                                <Typography variant="h6" color="initial" mt={4} sx={{ textIndent: '30px' }}>{data.desc2}</Typography>
                                                 <Button sx={{ color: "#ffffff", width: "250px", mt: 4, borderRadius: "30px", background: `${data.titlecolor}`, "&:hover": { backgroundColor: `${data.titlecolor}` } }}> View V.A.I</Button>
                                             </Stack>
                                         </motion.div>

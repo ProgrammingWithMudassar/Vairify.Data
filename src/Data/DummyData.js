@@ -13,6 +13,7 @@ import Section3revenueSharing from '../Assets/png/Section3revenueSharing.png'
 import Section3FoundingMembers from '../Assets/png/Section3FoundingMembers.png'
 import Section3DataDeiven from '../Assets/png/Section3DataDeiven.png'
 import Section3CreativeAutomation from '../Assets/png/Section3CreativeAutomation.png'
+import Section3GauidedRepresentative from '../Assets/png/Section3GauidedRepresentative.png'
 import VAI from '../Assets/png/VAI.png'
 import Section3p2pwallet from '../Assets/png/Section3p2pwallet.png'
 import about from '../Assets/png/about.png'
@@ -195,5 +196,15 @@ export const FeatureData = [
         title: "Revenue sharing",
         subTitle: "Data Driven",
         desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio quam commodi repudiandae suscipit! Doloremque quam illo quia illum, perferendis vero ex totam, culpa neque velit quae magni quas exercitationem in."
+    },
+    {
+        id: 14,
+        img: Section3GauidedRepresentative,
+        titlecolor: "#5caa5f",
+        subTitleColor: "#5caa5f",
+        number: "14",
+        title: "Provider Representatives",
+        subTitle: "Data Driven",
+        desc: "Our grand opening will take place in over 30 countries, with the primary goal of continuing to identify and implement the latest technology to support our community. To achieve this effectively, we require personnel with intimate knowledge of the countries we serve. As such, we will be appointing a provider representative for each country. These representatives will receive 5% of every dollar generated in their country and will be responsible for making our community visible in their area and communicating unique problems and challenges that need to be addressed"
     }
 ]

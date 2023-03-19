@@ -34,7 +34,7 @@ const Benifits = () => {
                         <Box textAlign='center' display='flex' flexDirection='column' alignItems='center' sx={{ gap: 2 }}>
                           <img src={data.img} alt="" style={{ width: `${data.width}` }} />
                           <Typography variant="h6" color="initial" fontWeight={600} mt={2}>{data.title}</Typography>
-                          <Typography variant="body1" color="initial" mt={2} >{data.desc}</Typography>
+                          <Typography variant="body1" color="initial" mt={2}>{data.desc}</Typography>
                         </Box>
                       </CardContent>
                     </Card>
