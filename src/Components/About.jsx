@@ -7,7 +7,7 @@ import { motion } from 'framer-motion'
 
 const About = () => {
   return (
-    <Box sx={{ mt: { xs: "24rem", md: 10 } }} className="bgCirule" >
+    <Box sx={{ mt: { xs: "34rem", md: 10 } }} className="bgCirule" >
       <Container>
         <Box className="sectionTitle">
           <Typography variant="h4" className='title name' fontWeight={600} >About Me</Typography>
@@ -24,7 +24,7 @@ const About = () => {
                 visible: { opacity: 1, x: 0 }
               }}
             >
-              <Typography variant="body1" color="initial" sx={{ textIndent: '30px' }}>{aboutData.desc}</Typography>
+              <Typography variant="h6" color="initial" sx={{ textIndent: '30px' }}>{aboutData.desc}</Typography>
             </motion.div>
           </Grid>
           <Grid item xs={12} md={4} display='flex' alignItems='center' justifyContent="center">
@@ -38,7 +38,7 @@ const About = () => {
                 visible: { opacity: 1, x: 0 }
               }}
             >
-              <img src={aboutData.img} alt="" style={{ width: "30rem" }} />
+              <img src={aboutData.img} alt="" style={{ width: "20rem" }} />
             </motion.div >
           </Grid>
         </Grid>

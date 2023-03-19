@@ -55,7 +55,7 @@ const Home = () => {
     <Box className="Header" >
       <Container>
         <Grid container spacing={4} sx={{ height: { xs: '80vh', md: '50vh' } }} >
-          <Grid item xs={12} md={6} sx={{ display: 'flex', alignItems: { xs: "", sm: "center", md: 'center' } }} >
+          <Grid item xs={12} md={8} sx={{ display: 'flex', alignItems: { xs: "", sm: "center", md: 'center' } }} >
             <Box >
               <motion.div
                 initial="hidden"
@@ -70,8 +70,8 @@ const Home = () => {
                 <Box >
                   <Typography variant="h3" color="myColor" fontWeight={600} sx={{ mt: { xs: 4, md: 2 }, fontSize: { xs: '40px', md: '50px' } }} className="name">{HomeData.title} </Typography>
                   <Typography variant="h3" color="myColor" fontWeight={900} sx={{ mt: { xs: 0, md: 0 }, fontSize: { xs: '40px', md: '50px' } }} >{HomeData.subTitle} </Typography>
-                  <Typography variant="body1" color="myColor" mt={3}>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque repudiandae facere explicabo tempore a id beatae cumque ipsa eum, inventore laborum modi sequi nostrum eaque iure commodi quia odio architecto?
+                  <Typography variant="h6" color="myColor" mt={3} sx={{textIndent: '30px'}}>
+                    {HomeData.desc}
                   </Typography>
                   <Button
                     onClick={handleOpen}
@@ -86,7 +86,7 @@ const Home = () => {
               </motion.div>
             </Box>
           </Grid>
-          <Grid item xs={12} md={6} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+          <Grid item xs={12} md={4} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
             <Box sx={{ width: "100%" }}>
               <motion.div
                 initial="hidden"
@@ -98,7 +98,7 @@ const Home = () => {
                   visible: { opacity: 1, x: 0 }
                 }}
               >
-                <img src={Main} alt="" style={{ width: '100%' }} className="profileImg" />
+                <img src={Main} alt="" style={{ width: '20rem' }} className="profileImg" />
               </motion.div>
               {/* First  */}
               <Modal

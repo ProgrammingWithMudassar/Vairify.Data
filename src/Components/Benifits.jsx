@@ -13,7 +13,7 @@ const Benifits = () => {
         <Box className="sectionTitle">
           <Typography variant="h4" className='title name' fontWeight={600} >Benifits</Typography>
         </Box>
-        <Typography variant="body1" color="initial" sx={{ textIndent: '30px', mt: 6 }}>{benifitData.desc}</Typography>
+        <Typography variant="h6" color="initial" sx={{ textIndent: '4em', mt: 6 }}>{benifitData.desc}</Typography>
         <Grid container spacing={2} sx={{ mt: { xs: 2, md: 8 } }}>
           {
             benifitCardData.map((data) => {
@@ -33,8 +33,8 @@ const Benifits = () => {
                       <CardContent>
                         <Box textAlign='center' display='flex' flexDirection='column' alignItems='center' sx={{ gap: 2 }}>
                           <img src={data.img} alt="" style={{ width: `${data.width}` }} />
-                          <Typography variant="body1" color="initial" fontWeight={600} mt={2}>{data.title}</Typography>
-                          <Typography variant="body2" color="initial" mt={2}>{data.desc}</Typography>
+                          <Typography variant="h6" color="initial" fontWeight={600} mt={2}>{data.title}</Typography>
+                          <Typography variant="body1" color="initial" mt={2} >{data.desc}</Typography>
                         </Box>
                       </CardContent>
                     </Card>
