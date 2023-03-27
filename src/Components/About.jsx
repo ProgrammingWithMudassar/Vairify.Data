@@ -10,7 +10,7 @@ const About = () => {
     <Box sx={{ mt: { xs: "34rem", md: 10 } }} className="bgCirule" >
       <Container>
         <Box className="sectionTitle">
-          <Typography variant="h4" className='title name' fontWeight={600} >About Me</Typography>
+          <Typography variant="h4" className='title name' fontWeight={600} >Welcome To a New World</Typography>
         </Box>
         <Grid container spacing={10} sx={{ mt: { xs: 0, md: 2 } }}>
           <Grid item xs={12} md={8} display='flex' alignItems='center' >

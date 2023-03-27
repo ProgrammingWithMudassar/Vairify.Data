@@ -270,6 +270,14 @@
   visibility: visible;
 }
 
+.thanks{
+    border-radius: 3rem;
+    text-align: center;
+    background: linear-gradient(360deg, #4D4B95 30%, #7C72C5 90%);
+}
+
+
+
 /* Contact me  */
 
 .input {

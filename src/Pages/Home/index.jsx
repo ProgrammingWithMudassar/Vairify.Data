@@ -1,7 +1,7 @@
 import { Stack } from '@mui/system'
 import React from 'react'
 import {
-  Navbar, Home, About, Benifits, ContactUs, Footer, Feature
+  Navbar, Home, About, Benifits, ContactUs, Footer, Feature, Thanks
 } from '../../Components'
 import Container from '@mui/material/Container'
 import '../../Components/Styles.css'
@@ -14,6 +14,7 @@ const index = () => {
         <About />
         <Benifits />
         <Feature />
+        <Thanks />
         <ContactUs />
         <Footer />
       </Stack>

@@ -11,7 +11,7 @@ const Benifits = () => {
     <Box sx={{ mt: { xs: 10, md: 10 } }} className="benifitCirule">
       <Container>
         <Box className="sectionTitle">
-          <Typography variant="h4" className='title name' fontWeight={600} >Benifits</Typography>
+          <Typography variant="h4" className='title name' fontWeight={600} >Benefits </Typography>
         </Box>
         <Typography variant="h6" color="initial" sx={{ textIndent: '4em', mt: 6 }}>{benifitData.desc}</Typography>
         <Grid container spacing={2} sx={{ mt: { xs: 2, md: 8 } }}>

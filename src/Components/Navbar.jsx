@@ -17,7 +17,7 @@ const Navbar = () => {
       <Container >
 
         {/* Laptop Navbar */}
-        <Box sx={{display:'flex'}}>
+        <Box sx={{display:'flex', justifyContent:'space-between'}}>
           <Box>
             <img src={Logo} alt="" style={{ width: "12rem" }} />
           </Box>

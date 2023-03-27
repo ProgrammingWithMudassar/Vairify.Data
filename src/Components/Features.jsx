@@ -44,11 +44,10 @@ const Features = () => {
                                                     <Typography variant="body1" color="#ffffff" className='number' sx={{ fontSize: '16px', background: `${data.titlecolor}` }}>{data.number}</Typography>
                                                     <Box ml={4}>
                                                         <Typography variant="body1" sx={{ fontSize: '20px', fontWeight: 600, color: `${data.titlecolor}` }}>{data.title}</Typography>
-                                                        <Typography variant="body2" sx={{ color: `${data.subTitleColor}` }}>{data.subTitle}</Typography>
                                                     </Box>
                                                 </Box>
                                                 <Typography variant="h6" color="initial" mt={4} sx={{ textIndent: '30px' }}>{data.desc}</Typography>
-                                                <Button sx={{ color: "#ffffff", width: "250px", mt: 4, borderRadius: "30px", background: `${data.titlecolor}`, "&:hover": { backgroundColor: `${data.titlecolor}` } }} onClick={handleShowVideo}> View V.A.I</Button>
+                                                <Button sx={{ color: "#ffffff", width: "250px", mt: 4, borderRadius: "30px", background: `${data.titlecolor}`, "&:hover": { backgroundColor: `${data.titlecolor}` } }} onClick={handleShowVideo}>View Video</Button>
                                                 <div className={`video-popup ${showVideo ? 'show' : ''}`} style={{ display: 'flex', flexDirection: 'column' }}>
                                                     <Button sx={{ my: '20px', color: '#ffffff', px: 4 }} onClick={closeVideo}> close </Button>
                                                     <ReactPlayer
@@ -105,12 +104,11 @@ const Features = () => {
                                                     <Typography variant="body1" color="#ffffff" className='number' sx={{ fontSize: '16px', background: `${data.titlecolor}` }}>{data.number}</Typography>
                                                     <Box ml={4}>
                                                         <Typography variant="body1" sx={{ fontSize: '20px', fontWeight: 600, color: `${data.titlecolor}` }}>{data.title}</Typography>
-                                                        <Typography variant="body2" sx={{ color: `${data.subTitleColor}` }}>{data.subTitle}</Typography>
                                                     </Box>
                                                 </Box>
                                                 <Typography variant="h6" color="initial" mt={4} sx={{ textIndent: '30px' }}>{data.desc}</Typography>
                                                 <Typography variant="h6" color="initial" mt={4} sx={{ textIndent: '30px' }}>{data.desc2}</Typography>
-                                                <Button sx={{ color: "#ffffff", width: "250px", mt: 4, borderRadius: "30px", background: `${data.titlecolor}`, "&:hover": { backgroundColor: `${data.titlecolor}` } }}> View V.A.I</Button>
+                                                <Button sx={{ color: "#ffffff", width: "250px", mt: 4, borderRadius: "30px", background: `${data.titlecolor}`, "&:hover": { backgroundColor: `${data.titlecolor}` } }}>View Video</Button>
                                             </Stack>
                                         </motion.div>
                                     </Grid>
