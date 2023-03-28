@@ -53,8 +53,8 @@ const Features = () => {
                                                     <ReactPlayer
                                                         url="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
                                                         controls={true}
-                                                        width="800px"
-                                                        height="450px"
+                                                        width="1000px"
+                                                        height="550px"
                                                     />
                                                 </div>
                                             </Stack>
