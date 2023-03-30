@@ -20,7 +20,6 @@ import { Provider } from "react-redux";
 import { configureStore } from '@reduxjs/toolkit'
 import counterSlice from './Features/Counter/CounterSlice.js'
 
-
 const store = configureStore({
   reducer: { counter: counterSlice }
 });

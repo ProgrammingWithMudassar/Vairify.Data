@@ -4,7 +4,7 @@ import { Box, Container, Grid, Typography, Button, Modal, Stack } from '@mui/mat
 import Main from '../Assets/png/Main.png'
 import { HomeData } from '../Data/DummyData.js'
 import { motion } from "framer-motion";
-
+import ReactPlayer from 'react-player';
 
 const style = {
   position: 'absolute',
@@ -27,6 +27,16 @@ const Home = () => {
   const handleClose = () => {
     setOpen(false);
   };
+  const [showVideo, setShowVideo] = useState(false);
+
+    const handleShowVideo = () => {
+        setShowVideo(true);
+    };
+
+    const closeVideo = () => {
+        setShowVideo(false);
+    }
+
 
 
   const [SecOpen, setSecOpen] = React.useState(false);
@@ -70,7 +80,7 @@ const Home = () => {
                 <Box >
                   <Typography variant="h3" color="myColor" fontWeight={600} sx={{ mt: { xs: 4, md: 2 }, fontSize: { xs: '40px', md: '50px' } }} className="name">{HomeData.title} </Typography>
                   <Typography variant="h3" color="myColor" fontWeight={900} sx={{ mt: { xs: 0, md: 0 }, fontSize: { xs: '40px', md: '50px' } }} >{HomeData.subTitle} </Typography>
-                  <Typography variant="h6" color="myColor" mt={3} sx={{textIndent: '30px'}}>
+                  <Typography variant="h6" color="myColor" mt={3} sx={{ textIndent: '30px' }}>
                     {HomeData.desc}
                   </Typography>
                   <Button
@@ -99,6 +109,15 @@ const Home = () => {
                 }}
               >
                 <img src={Main} alt="" style={{ width: '20rem' }} className="profileImg" />
+                <div className={`video-popup ${showVideo ? 'show' : ''}`} style={{ display: 'flex', flexDirection: 'column' }}>
+                  <Button sx={{ my: '20px', color: '#ffffff', px: 4 }} onClick={closeVideo}> close </Button>
+                  <ReactPlayer
+                    url="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                    controls={true}
+                    width="1000px"
+                    height="550px"
+                  />
+                </div>
               </motion.div>
               {/* First  */}
               <Modal

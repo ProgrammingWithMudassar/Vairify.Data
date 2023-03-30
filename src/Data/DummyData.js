@@ -120,7 +120,7 @@ export const FeatureData = [
         titlecolor: "#fdc926",
         subTitleColor: "#fdc926",
         number: "06",
-        title: "TRUREVU review system",
+        title: "TRUREVUⓒw review system",
         subTitle: "Data Driven",
         desc: "At Vairify, we understand the importance of reviews as they are the backbone of your reputation. We have taken special care to protect and ensure their accuracy. Having all your reviews in one place benefits you no matter where you go. Reviews are crucial for clients to evaluate the quality of their interactions and for providers to set the best prices for their services. However, they are also susceptible to manipulation and abuse, which is why we have implemented measures to safeguard their authenticity. Members displaying the TRUREVU symbol can rest assured that they are receiving a genuine reflection of their experiences. Our commitment to ensuring accurate and reliable reviews helps maintain the integrity of our platform and the trust of all our members, including clients, providers, and businesses. ",
         desc2:"Check out our Migration Special with our founder's perks for the first 30 days, we import all your reviews into one location"
